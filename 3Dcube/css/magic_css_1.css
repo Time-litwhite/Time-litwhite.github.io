@@ -1,0 +1,50 @@
+/*æœ€å¤–å±‚å®¹å™¨æ ·å¼*/
+.wrap {
+   width: 100px;
+   height: 100px;
+   margin: 150px;
+   position: relative;
+}
+/*åŒ…è£¹æ‰€æœ‰å®¹å™¨æ ·å¼*/
+/*è®¾ç½®transform-style: preserve-3dï¼Œè®©å…¶å­å…ƒç´ åœ¨3Dç©ºé—´å‘ˆçŽ°*/
+.cube {
+   width: 50px;
+   height: 50px;
+   margin: 0 auto;
+   transform-style: preserve-3d;
+   transform: rotateX(-30deg) rotateY(-80deg);
+   animation: rotate linear 20s infinite;
+}
+@-webkit-keyframes rotate {
+   from {
+       transform: rotateX(0deg) rotateY(0deg);
+  }
+   to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+.cube div {
+   position: absolute;
+   width: 200px;
+   height: 200px;
+   opacity: 0.8;
+   transition: all .4s;
+}
+/*å®šä¹‰æ‰€æœ‰å›¾ç‰‡æ ·å¼*/
+.pic {
+   width: 200px;
+   height: 200px;
+}
+/*å®šä¹‰å°æ­£æ–¹ä½“æ ·å¼*/
+.cube span {
+   display: block;
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   top: 50px;
+   left: 50px;
+}
+.cube .in_pic {
+   width: 100px;
+   height: 100px;
+}
